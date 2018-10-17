@@ -116,6 +116,7 @@
     .main-menu__item{
       text-align: center;
       padding: 0;
+      height: 40px;
     }
   }
   .main-menu--right{
@@ -127,6 +128,7 @@
     .main-menu__item--right{
       margin-bottom: 11px;
       width: 100%;
+      height: 40px;
     }
   }
     .main-menu{
@@ -472,10 +474,10 @@
   transform: rotate(-135deg);
 }
   .main-menu{
-    height: 50vh;
+    overflow: scroll;
     padding-top: 80px;
     padding-left: 0;
-    position: fixed;
+    position: static;
     background-color: rgba(0,0,0,.85);
     top: 0;
     left: 0;
@@ -494,7 +496,8 @@
     }
   }
   .main-menu--right{
-    margin-top: 50vh;
+    margin: 0;
+    padding-top: 25px;
   }
   .other-categories__menu{
     display: -webkit-flex;
@@ -551,6 +554,12 @@
 }
   .slider__item-link{
    width: 100%;
+  }
+  .popup.active{
+    width: 90%;
+  }
+  .popup-panel{
+    width: 90%;
   }
 }
 @media (max-width: 500px) {
