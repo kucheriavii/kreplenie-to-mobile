@@ -367,6 +367,40 @@
       margin: 0 auto;
       max-width: 380px;
     }
+
+
+    /*index mobile*/
+    .other-categories{
+      display: block;
+    }
+    .other-categories__menu{
+      display: block;
+      width: 100%;
+    }
+    .other-categories__menu-image{
+      display: none;
+    }
+    .other-categories__menu-item{
+      display: block;
+      width: 100%;
+      min-width: 100%;
+      border: 1px solid #bdbdbd;
+      border-bottom: none;
+      height: 80px;
+      span{
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+      }
+    }
+    .other-categories__menu-item.active{
+      border: 1px solid #bdbdbd;
+      color: $accent;
+    }
 }
 
 
