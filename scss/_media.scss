@@ -751,9 +751,6 @@
   .item-main-menu__element{
     padding-left: 5px;
     padding-right: 5px;
-    a{
-      font-size: 10px;
-    }
   }
   .leave-feedback__wrapper{
     position: static;
@@ -766,6 +763,12 @@
   }
   .item-buy-panel{
     flex-wrap: wrap;
+  }
+  .item-buy-panel {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .item-counter{
     width: 100%;
@@ -792,6 +795,11 @@
   .popup-content .slider__item-link{
     height: 250px;
   }
+  .popup-wrapper .main-slider__popup .popup-panel{
+    .item-code{
+      display: none;
+    }
+  }
   .popup-content .item-slider .item__slider-wrap{
     width: 300px;
     height: auto;
@@ -806,9 +814,20 @@
     padding-right: 5px;
     font-size: 12px;
     text-align: center;
-  }
+    display: flex;
+    align-items: center;
+}
   .catalog__sort-link{
     font-size: 12px;
+  }
+}
+@media (max-width: 400px){
+  .item-main-menu__element{
+    padding-left: 5px;
+    padding-right: 5px;
+    a{
+      font-size: 10px;
+    }
   }
 }
 /*==========  Mobile First  ==========*/
