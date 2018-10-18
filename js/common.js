@@ -35,14 +35,12 @@ $(function() {
     })*/
 
 
-  console.log($(window).width())
   $('.burger-menu-btn').click(function(e){
     if($(window).width()<=1023){
       $('.main-menu').slideToggle(300);
       $('.main-menu--right').slideToggle(300);
     }
   })
-  console.log($(window).width())
   $('.main-menu__link').click(function(e){
     if($(window).width()<=1023){
       $('.main-menu').slideUp(300);
@@ -54,8 +52,16 @@ $(function() {
     $('.burger-menu-btn').click(function(){
       $(this).toggleClass('open');
     });
-  }
 
+  }
+  if($(window).width()<=1023){
+    $("<div class='filter-burger'></div>").insertBefore('.filter-wrapper');
+    $(document).on('click','.filter-burger', function(e){
+      $('.filter-wrapper').slideToggle();
+      $('.filter-burger').toggleClass('active');
+    })
+
+  }
 
 
 
