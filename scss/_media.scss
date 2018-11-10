@@ -218,6 +218,49 @@
     height: auto;
     position: absolute;
   }
+  .drop-menu-button {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 100%;
+  }
+  .slider-main{
+    margin-top: 50px;
+  }
+  .drop-menu .drop-menu__submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+    left: 0;
+    z-index: 999;
+  }
+  .drop-menu__item{
+    height: auto;
+  }
+  .drop-menu__submenu{
+    min-height: auto !important;
+  }
+  .drop-menu__item:hover > .drop-menu__submenu{
+    display: none;
+  }
+  .drop-menu{
+    top: 110px;
+  }
+  .drop-menu__item.mobile-active .drop-menu__submenu{
+    display: block;
+  }
   .breadcrumbs{
     margin-top: 50px;
   }
@@ -631,6 +674,16 @@
   .catalog__item.active .catalog__item-gallery-wrap{
     display: none;
   }
+  .popup-wrapper .main-slider__popup .popup-name {
+    padding-right: 5px;
+    font-size: 17px;
+    align-items: center;
+    margin: 0;
+  }
+  /*****blind styles****/
+  .contact-address,.contact-phones,.contact-email,.contact-email {
+    text-align: center;
+  }
 }
 @media (max-width: 600px){
   .other-categories__menu{
@@ -759,7 +812,7 @@
     margin-top: 41px;
   }
   .feedback-item__date{
-    right: 0;
+    right: 21px;
   }
   .item-buy-panel{
     flex-wrap: wrap;
@@ -828,6 +881,15 @@
     a{
       font-size: 10px;
     }
+  }
+  .popup-content .slider__item-link img{
+    margin: 0;
+  }
+}
+@media (max-width: 360px){
+
+  .popup-content .slider__item-link img{
+    margin: 0;
   }
 }
 /*==========  Mobile First  ==========*/
